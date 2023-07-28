@@ -13,7 +13,7 @@ import { inputPassword ,InputPassword} from 'vue3-input-password';
 
 组件内抛出changeType('text'|'password')设置明密文，setValue(val)手动设置值
 
-######  2、使用原生input 不要使用v-model
+######  2、使用原生input使用InputPassword初始化，不要使用v-model
     <input ref='inputR' :modelValue='password'/>
 
       let inputInstance:any = ''
