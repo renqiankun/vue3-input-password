@@ -9,7 +9,7 @@
  
 
 ######  inputPassword 为组件，项目中包含vue3+ element-plus + @lement-plus/icon-vue 则可以直接使用
-     <inputPassword  v-model='passowrd' />
+     <inputPassword show-password v-model='passowrd' />
 
 组件内抛出changeType('text'|'password')设置明密文，setValue(val)手动设置值
 
