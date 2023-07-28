@@ -44,7 +44,7 @@ let isPassword = computed(() => {
 })
 const changePasswordTypeHand = (type: 'text' | 'password') => {
   initType.value = type
-  inputInstance?.$changeType(type)
+  inputInstance.$changeType(type)
 }
 const setValue = (value = '') => {
   inputInstance?.$setValue(value)

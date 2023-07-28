@@ -208,7 +208,6 @@ export class InputPassword {
   }
 
   warn(msg: any) {
-    console.log(msg)
   }
 
   $setValue(value?: any) {
