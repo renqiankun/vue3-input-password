@@ -4,18 +4,20 @@
 
 ###### 引入  npm i vue3-input-password
 
-######  使用  
-import { inputPassword ,InputPassword} from 'vue3-input-password';
+######  1、使用引入组件
+    import { inputPassword } from 'vue3-input-password';
  
 
 ######  inputPassword 为组件，项目中包含vue3+ element-plus + @lement-plus/icon-vue 则可以直接使用
-   &lt;inputPassword  v-model='passowrd' />
+     <inputPassword  v-model='passowrd' />
 
 组件内抛出changeType('text'|'password')设置明密文，setValue(val)手动设置值
 
-######  2、使用原生input使用InputPassword初始化，不要使用v-model
-    <input ref='inputR' :modelValue='password'/>
+######  2、使用原生input使用InputPassword初始化（使用InputPassword则与框架无关），不要使用v-model，
 
+    import {InputPassword} from 'vue3-input-password';
+    <input ref='inputR' :modelValue='password'/>
+   
       let inputInstance:any = ''
       let password = ref('')
       let inputR = ref()
@@ -31,4 +33,4 @@ import { inputPassword ,InputPassword} from 'vue3-input-password';
 
    
  ######  InputPassword 实例参数 { Symbol , callback , pattern}
-  Symbol , callback , pattern [RegExp正则过滤] 默认 /([\u4e00-\u9fa5])/g 中文
+    Symbol , callback , pattern [RegExp正则过滤] 默认 /([\u4e00-\u9fa5])/g 中文

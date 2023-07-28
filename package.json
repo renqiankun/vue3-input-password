@@ -1,6 +1,7 @@
 {
   "name": "vue3-input-password",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "Keywords":["vue3","password","密码组件","浏览器记住密码弹窗"],
   "files": [
     "dist",
     "README.md"
