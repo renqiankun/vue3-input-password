@@ -26,17 +26,17 @@ let inputRef = ref()
 onMounted(() => {
   init()
 })
-let inputInstance: any = ref('')
+let inputInstance: any = ''
 const init = () => {
   let node = inputRef.value.ref
-  inputInstance.value = new InputPassword(node, {
+  inputInstance = new InputPassword(node, {
     symbol: '•',
     callback: () => {
-      emits('update:modelValue', inputInstance.value.value)
+      emits('update:modelValue', inputInstance.value)
     }
   })
   // 初始化值
-  inputInstance.value.$setValue(props.modelValue)
+  inputInstance.$setValue(props.modelValue)
 }
 let initType = ref('password')
 let isPassword = computed(() => {
