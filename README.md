@@ -1,7 +1,7 @@
 
 ##### 自定义密码组件 使用input type=text 代替 参考nice-pass-word，主要防止浏览器弹出记住密码
 ###### github: https://github.com/renqiankun/vue3-input-password
-###### 预览[https://renqiankun.github.io/vue3-element-admin-simple/index.html]
+###### [预览](https://renqiankun.github.io/vue3-element-admin-simple/index.html)
 
 ###### 引入  npm i vue3-input-password
 
